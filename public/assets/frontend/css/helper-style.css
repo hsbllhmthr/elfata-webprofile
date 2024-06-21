@@ -1,0 +1,307 @@
+/******************************
+
+    00 - Helper CSS
+    01 - Easier Mode
+
+******************************/
+
+/*----------------------------------------*/
+/*  00 - Helper CSS
+/*----------------------------------------*/
+/* start direct theme css */
+.features-list ul li.xmark::before {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-family: "Font Awesome 5 Pro";
+    content: "\f00d";
+    color: #F54748;
+    font-size: 16px;
+}
+/* end direct theme css */
+
+.custom-line-height-0 {
+    line-height: 0px!important;
+}
+
+.custom-font-size-64 {
+    font-size: 64px;
+}
+
+.easier-custom-font-size-24 {
+    font-size: 24px;
+}
+.easier-pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+.easier-line-height-0 {
+    line-height: 0 !important;
+}
+
+.custom-color-orange {
+    color: #ff4500;
+}
+
+.custom-font-size-42 {
+    font-size: 42px;
+}
+
+.custom-pure-button {
+    border: none;
+    background-color: transparent;
+}
+
+.custom-max-width-80 {
+    max-width: 80px;
+}
+
+.custom-max-width-200 {
+    max-width: 200px;
+}
+
+/* start page builder button */
+.fixed-page-builder-btn {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+}
+
+.page-builder-btn {
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--bottom-button-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.page-builder-btn:hover {
+    color: #fff;
+    background-color: var(--bottom-button-hover-color);
+}
+/* end page builder button */
+
+
+/* side whatsapp button */
+.btn-whatsapp-pulse {
+    background-color: var(--side-button-color);
+    color: white;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    text-decoration: none;
+    border-radius: 50%;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    z-index: 9999;
+}
+
+.btn-whatsapp-pulse:hover {
+    color: #fff;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(33, 37, 41, 0.5);
+    }
+    80% {
+        box-shadow: 0 0 0 14px rgba(33, 37, 41, 0);
+    }
+}
+
+.btn-whatsapp-pulse-border {
+    bottom: 160px;
+    right: 20px;
+    animation-play-state: paused;
+}
+
+.btn-whatsapp-pulse-border-2 {
+    bottom: 240px;
+    right: 20px;
+    animation-play-state: paused;
+}
+
+.custom-color-black {
+    background-color: var(--bottom-button-color);
+}
+
+.custom-color-blue {
+    background-color: #1a8cd8;
+}
+
+@keyframes pulse-border {
+    0% {
+        padding: 25px;
+        opacity: 0.75;
+    }
+    75% {
+        padding: 50px;
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* bottom whatsapp button */
+.mobile-widget-container {
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 999;
+}
+
+.mobile-widget-container a {
+    color: #fff;
+    background-color: var(--bottom-button-color);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.btn-icon i {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.btn-icon:hover {
+    color: #fff;
+    background-color: var(--bottom-button-hover-color);
+}
+
+@media (max-width: 767px) {
+    .mobile-widget-container .btn-icon {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+}
+
+.custom-category-link a {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 9px 22px;
+    color: var(--main-color);
+    margin-right: 10px;
+    border-radius: 100px;
+    display: inline-block;
+    background: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
+    box-shadow: 0 15px 30px 0 rgba(255, 69, 0, 0.15);
+}
+
+.custom-category-link a:hover, .custom-category-link a.current {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.custom-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
+.custom-breadcrumb .breadcrumb-item {
+    font-size: 16px;
+}
+/*----------------------------------------*/
+/*  01 -  Easier Mode
+/*----------------------------------------*/
+.easier-mode {
+    position: relative;
+}
+
+.easier-mode .easier-section-area {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.easier-mode .easier-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.easier-mode:hover .easier-section-area {
+    opacity: 0.3;
+}
+
+.easier-mode:hover .easier-middle {
+    opacity: 1;
+}
+
+
+
+.modal-backdrop {
+    display: none;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.custom-btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 2px 12px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.custom-btn:hover {
+    background-color: RoyalBlue;
+}
+
+.custom-font-icon {
+    color: white;
+}
+
+.easier-mode:hover {
+    background: #e1e1e1;
+    box-shadow: 0 0 0 2px #d0d0d0;
+}
+
+.sizing-for-logo:hover {
+    width: 160px;
+}
+
+.sizing-for-social:hover {
+    width: 260px;
+}
